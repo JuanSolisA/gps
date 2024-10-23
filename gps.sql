@@ -1,0 +1,62 @@
+CREATE DATABASE gps;
+
+USE gps;
+
+CREATE TABLE rutas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    desde VARCHAR(100),
+    hasta VARCHAR(100)
+);
+
+INSERT INTO rutas (desde, hasta) VALUES
+('Roseti y Heredia', 'Roseti y Estomba'),
+('Roseti y Estomba', 'Roseti y Tronador'),
+('Roseti y Tronador', 'Roseti y Plaza'),
+('Fraga y Plaza', 'Fraga y Tronador'),
+('Fraga y Tronador', 'Fraga y Estomba'),
+('Fraga y Estomba', 'Fraga y Heredia'),
+('Guevara y Heredia', 'Guevara y Estomba'),
+('Guevara y Estomba', 'Guevara y Tronador'),
+('Av. Triunvirato y Plaza', 'Av. Triunvirato y Tronador'),
+('Av. Triunvirato y Tronador', 'Av. Triunvirato y Estomba'),
+('Av. Triunvirato y Estomba', 'Av. Triunvirato y Heredia'),
+('Av. Triunvirato y Heredia', 'Av. Triunvirato y Estomba'),
+('Av. Triunvirato y Estomba', 'Av. Triunvirato y Tronador'),
+('Av. Triunvirato y Tronador', 'Av. Triunvirato y Plaza'),
+('Iturri y Tronador', 'Iturri y Estomba'),
+('Iturri y Estomba', 'Iturri y Heredia'),
+('Caldas y Heredia', 'Caldas y Estomba'),
+('Caldas y Estomba', 'Caldas y Pedro de Jerez'),
+('Caldas y Pedro de Jerez', 'Caldas y Tronador'),
+('Caldas y Tronador', 'Caldas y Mariano Demaría'),
+('Caldas y Mariano Demaría', 'Caldas y Plaza'),
+('Atanasio Girardot y Plaza', 'Atanasio Girardot y Mariano Demaría'),
+('Atanasio Girardot y Mariano Demaría', 'Atanasio Girardot y Tronador'),
+('Atanasio Girardot y Tronador', 'Atanasio Girardot y Pedro de Jerez'),
+('Atanasio Girardot y Pedro de Jerez', 'Atanasio Girardot y Estomba'),
+('Atanasio Girardot y Estomba', 'Atanasio Girardot y Heredia'),
+('Plaza y Roseti', 'Plaza y Fraga'),
+('Plaza y Fraga', 'Plaza y Av. Triunvirato'),
+('Plaza y Av. Triunvirato', 'Plaza y Caldas'),
+('Plaza y Caldas', 'Plaza y Atanasio Girardot'),
+('Mariano Demaría y Caldas', 'Mariano Demaría y Atanasio Girardot'),
+('Mariano Demaría y Atanasio Girardot', 'Mariano Demaría y Caldas'),
+('Tronador y Atanasio Girardot', 'Tronador y Caldas'),
+('Tronador y Caldas', 'Iturri y Tronador'),
+('Iturri y Tronador', 'Tronador y Av. Triunvirato'),
+('Tronador y Av. Triunvirato', 'Tronador y Guevara'),
+('Tronador y Guevara', 'Tronador y Fraga'),
+('Tronador y Fraga', 'Tronador y Roseti'),
+('Pedro de Jerez y Caldas', 'Pedro de Jerez y Atanasio Girardot'),
+('Pedro de Jerez y Atanasio Girardot', 'Pedro de Jerez y Caldas'),
+('Estomba y Roseti', 'Estomba y Fraga'),
+('Estomba y Fraga', 'Estomba y Guevara'),
+('Estomba y Guevara', 'Estomba y Av. Triunvirato'),
+('Estomba y Av. Triunvirato', 'Iturri y Estomba'),
+('Iturri y Estomba', 'Heredia y Estomba'),
+('Heredia y Estomba', 'Heredia y Atanasio Girardot'),
+('Heredia y Atanasio Girardot', 'Heredia y Av. Triunvirato'),
+('Heredia y Av. Triunvirato', 'Heredia y Guevara'),
+('Heredia y Guevara', 'Heredia y Fraga'),
+('Heredia y Fraga', 'Heredia y Roseti')
+;
